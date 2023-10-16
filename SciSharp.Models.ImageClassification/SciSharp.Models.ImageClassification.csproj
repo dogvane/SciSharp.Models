@@ -12,11 +12,26 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="python\**" />
+    <EmbeddedResource Remove="python\**" />
+    <None Remove="python\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Utils\ClassImageUtil.cs" />
+    <Compile Remove="Utils\ImgExtends.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="README.md" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\SciSharp.Models.Core\SciSharp.Models.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Utils\" />
   </ItemGroup>
 
 </Project>

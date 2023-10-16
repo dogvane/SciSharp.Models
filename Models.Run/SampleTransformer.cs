@@ -1,4 +1,4 @@
-﻿using SciSharp.Models.Transformer;
+﻿//using SciSharp.Models.Transformer;
 using System;
 using System.Diagnostics;
 using Tensorflow.Keras.ArgsDefinition;
@@ -15,14 +15,14 @@ namespace Models.Run
         {
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
-            var transformer = new TransformerClassification(new TransformerClassificationArgs
-            {
-            });
+            //var transformer = new TransformerClassification(new TransformerClassificationArgs
+            //{
+            //});
 
-            var model = transformer.Train();
-            transformer.Save(model, "");
-            var model = transformer.Load("");
-            transformer.Evaluate(model);
+            /*var model = transformer.Train();
+            transformer.Save(model, "");*/
+            //var model = transformer.Load("");
+            //transformer.Evaluate(model);
 
             stopwatch.Stop();
             TimeSpan elapsedTime = stopwatch.Elapsed;

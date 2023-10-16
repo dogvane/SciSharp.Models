@@ -3,6 +3,7 @@
 ################################################################################
 
 .vs
+.vscode
 bin
 obj
 log
@@ -13,4 +14,5 @@ __pycache__
 /SciSharp.Models.ObjectDetection/YOLOv3/python/mAP
 /SciSharp.Models.ObjectDetection/YOLOv3/data
 /SciSharp.Models.Transformer/data/*.txt
-
+/SciSharp.Models.ImageClassification/python
+opcode.txt
